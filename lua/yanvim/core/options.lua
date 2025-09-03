@@ -20,7 +20,6 @@ o.cursorline = true
 o.cursorlineopt = 'number'
 o.winborder = 'rounded'
 o.list = true
-o.show_mode = false
 
 -- Search behavior
 o.ignorecase = true
