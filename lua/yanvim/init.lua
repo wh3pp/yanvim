@@ -12,7 +12,13 @@ local function process_plugin(plugin)
 end
 
 function M.setup(plugins)
-  plugins = plugins or {}
+  -- Setup neovim config
+  require('yanvim.core.options')
+  require('yanvim.core.keymaps')
+  require('yanvim.core.autocmds')
+
+  -- Setup plugins
+  plugins = plugins or require('yanvim.plugins') or {}
 
   for _, group in pairs(plugins) do
     if type(group) == 'table' then
