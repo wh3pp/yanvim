@@ -64,12 +64,12 @@ M.blink = {
       },
     },
   },
-  config = function(opts) require('blink.cmp').setup(opts or {}) end,
+  config = function(opts) require('blink.cmp').setup(opts) end,
 }
 
 -- Mini.snippets
 M.snippets = {
   opts = {},
-  config = function(opts) require('mini.snippets').setup(opts or {}) end,
+  config = function(opts) require('mini.snippets').setup(opts) end,
 }
 return M

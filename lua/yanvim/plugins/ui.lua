@@ -34,31 +34,31 @@ M.kanagawa = {
     end,
   },
   load_later = false,
-  config = function(opts) require('kanagawa').setup(opts or {}) end,
+  config = function(opts) require('kanagawa').setup(opts) end,
 }
 
 -- Mini.icons
 M.icons = {
   opts = {},
-  config = function(opts) require('mini.icons').setup(opts or {}) end,
+  config = function(opts) require('mini.icons').setup(opts) end,
 }
 
 -- Mini.indentscope
 M.indentscope = {
   opts = {},
-  config = function(opts) require('mini.indentscope').setup(opts or {}) end,
+  config = function(opts) require('mini.indentscope').setup(opts) end,
 }
 
 -- Mini.notify
 M.notify = {
   opts = {},
-  config = function(opts) require('mini.notify').setup(opts or {}) end,
+  config = function(opts) require('mini.notify').setup(opts) end,
 }
 
 -- Mini.tabline
 M.tabline = {
   opts = {},
-  config = function(opts) require('mini.tabline').setup(opts or {}) end,
+  config = function(opts) require('mini.tabline').setup(opts) end,
 }
 
 -- Mini.hippatterns

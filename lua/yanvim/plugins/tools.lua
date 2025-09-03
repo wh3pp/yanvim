@@ -18,7 +18,7 @@ M.mason_tool_installer = {
       ['mason-nvim-dap'] = false,
     },
   },
-  config = function(opts) require('mason-tool-installer').setup(opts or {}) end,
+  config = function(opts) require('mason-tool-installer').setup(opts) end,
 }
 
 M.mason = {
@@ -26,7 +26,7 @@ M.mason = {
     source = 'mason-org/mason.nvim',
   },
   opts = {},
-  config = function(opts) require('mason').setup(opts or {}) end,
+  config = function(opts) require('mason').setup(opts) end,
 }
 
 return M
