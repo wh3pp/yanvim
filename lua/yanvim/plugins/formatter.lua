@@ -11,7 +11,8 @@ M.conform = {
   },
 
   config = function(opts)
-    local conform = require('conform').setup(opts)
+    local conform = require('conform')
+    conform.setup(opts)
 
     local map = vim.keymap.set
     map(
