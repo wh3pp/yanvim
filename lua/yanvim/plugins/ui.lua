@@ -65,7 +65,7 @@ M.tabline = {
 M.hipatterns = {
   opts = {},
   config = function(_)
-    local hipatterns = require('mini.hippatterns')
+    local hipatterns = require('mini.hipatterns')
     hipatterns.setup({
       highlighters = {
         fixme = { pattern = '%f[%w]()FIXME()%f[%W]', group = 'MiniHipatternsFixme' },
