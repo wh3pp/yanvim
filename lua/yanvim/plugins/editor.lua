@@ -47,7 +47,17 @@ M.extra = {
 -- Mini.keymap
 M.keymap = {
   opts = {},
-  config = function(opts) require('mini.keymap').setup(opts) end,
+  config = function(opts)
+    local keymap = require('mini.keymap')
+    keymap.setup(opts)
+
+    local map_combo = keymap.map_combo
+    local mode = { 'i', 'c', 'x', 's' }
+    map_combo(mode, 'jk', '<BS><BS><Esc>')
+    map_combo(mode, 'kj', '<BS><BS><Esc>')
+    map_combo('t', 'jk', '<BS><BS><C-\\><C-n>')
+    map_combo('t', 'kj', '<BS><BS><C-\\><C-n>')
+  end,
 }
 
 -- Mini.move
