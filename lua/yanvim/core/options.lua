@@ -1,41 +1,42 @@
 local g = vim.g
-local o = vim.opt
+local opt = vim.opt
 
 -- Key mappings
 g.mapleader = ' '
 g.maplocalleader = ' '
 
 -- Indentation
-o.tabstop = 2
-o.expandtab = true
-o.shiftwidth = 2
-o.softtabstop = 2
+opt.tabstop = 2
+opt.expandtab = true
+opt.shiftwidth = 2
+opt.softtabstop = 2
 
 -- UI
-o.relativenumber = true
-o.ruler = false
-o.signcolumn = 'yes'
-o.numberwidth = 2
-o.cursorline = true
-o.cursorlineopt = 'number'
-o.winborder = 'rounded'
-o.list = true
+opt.relativenumber = true
+opt.ruler = false
+opt.signcolumn = 'yes'
+opt.numberwidth = 2
+opt.cursorline = true
+opt.cursorlineopt = 'number'
+opt.winborder = 'rounded'
+opt.list = true
 
 -- Search behavior
-o.ignorecase = true
-o.smartcase = true
+opt.ignorecase = true
+opt.smartcase = true
 
 -- Editing and file management
-o.clipboard = 'unnamedplus'
-o.undofile = true
+opt.clipboard = 'unnamedplus'
+opt.undofile = true
+opt.whichwrap:append('<>[]hl')
 
 -- Window management
-o.splitbelow = true
-o.splitright = true
+opt.splitbelow = true
+opt.splitright = true
 
 -- Timings
-o.timeoutlen = 400
-o.updatetime = 500
+opt.timeoutlen = 400
+opt.updatetime = 500
 
 -- Performance settings
 g.loaded_node_provider = 0
