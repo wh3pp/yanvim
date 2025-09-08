@@ -1,4 +1,13 @@
 local M = {}
+
+M.mason = {
+  spec = {
+    source = 'mason-org/mason.nvim',
+  },
+  opts = {},
+  config = function(opts) require('mason').setup(opts) end,
+}
+
 M.mason_tool_installer = {
   spec = {
     source = 'WhoIsSethDaniel/mason-tool-installer.nvim',
@@ -19,14 +28,6 @@ M.mason_tool_installer = {
     },
   },
   config = function(opts) require('mason-tool-installer').setup(opts) end,
-}
-
-M.mason = {
-  spec = {
-    source = 'mason-org/mason.nvim',
-  },
-  opts = {},
-  config = function(opts) require('mason').setup(opts) end,
 }
 
 return M
