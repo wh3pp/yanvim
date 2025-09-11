@@ -20,6 +20,9 @@ opt.cursorline = true
 opt.cursorlineopt = 'number'
 opt.winborder = 'rounded'
 opt.list = true
+opt.showmode = false
+opt.termguicolors = true
+opt.smoothscroll = true
 
 -- Search behavior
 opt.ignorecase = true
