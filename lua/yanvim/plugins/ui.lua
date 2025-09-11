@@ -79,4 +79,10 @@ M.hipatterns = {
   end,
 }
 
+-- Mini.statusline
+M.statusline = {
+  opts = {},
+  config = function(opts) require('mini.statusline').setup(opts) end,
+}
+
 return M
