@@ -5,14 +5,13 @@ M.oil = {
   spec = {
     source = 'stevearc/oil.nvim',
   },
-  opts = {
-    default_file_explorer = true,
-  },
+  opts = {},
   config = function(opts)
     require('oil').setup(opts)
     local map = vim.keymap.set
     map('n', '<leader>e', '<cmd>Oil<cr>', { desc = 'Open file explorer (oil)' })
   end,
+  load_later = false,
 }
 
 -- Mini.pick
