@@ -5,7 +5,9 @@ M.oil = {
   spec = {
     source = 'stevearc/oil.nvim',
   },
-  opts = {},
+  opts = {
+    default_file_explorer = true,
+  },
   config = function(opts)
     require('oil').setup(opts)
     local map = vim.keymap.set
