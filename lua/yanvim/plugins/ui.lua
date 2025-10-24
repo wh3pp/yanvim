@@ -41,6 +41,7 @@ M.kanagawa = {
 M.icons = {
   opts = {},
   config = function(opts) require('mini.icons').setup(opts) end,
+  load_later = false;
 }
 
 -- Mini.indentscope

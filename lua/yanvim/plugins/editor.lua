@@ -25,6 +25,7 @@ M.pick = {
     map('n', '<leader>fb', '<cmd>Pick buffers<cr>', { desc = 'Open buffer finder (Pick)' })
     map('n', '<leader>fg', '<cmd>Pick grep_live<cr>', { desc = 'Open file grep live (Pick)' })
   end,
+  load_later = false,
 }
 
 -- Mini.ai
