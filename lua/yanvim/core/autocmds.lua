@@ -11,7 +11,7 @@ local on_attach = function(_, bufnr)
 
   -- Inspection
   map('n', 'K', vim.lsp.buf.hover, opts('Hover Documentation'))
-  map('si', '<C-k>', vim.lsp.buf.signature_help, opts('Signature Help'))
+  map({ 's', 'i' }, '<C-k>', vim.lsp.buf.signature_help, opts('Signature Help'))
 
   -- Actions
   map('n', '<leader>ra', vim.lsp.buf.rename, opts('Rename Symbol'))
